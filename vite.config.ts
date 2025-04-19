@@ -16,4 +16,7 @@ export default defineConfig({
       reload: ['resources/views/**/*.edge'],
     }),
   ],
+  build: {
+    outDir: 'dist', // Assurez-vous que cette ligne est présente
+  }
 })
