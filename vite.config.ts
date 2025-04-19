@@ -18,5 +18,5 @@ export default defineConfig({
   ],
   build: {
     outDir: 'dist', // Assurez-vous que cette ligne est présente
-  }
+  },
 })

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ title || 'Lariss Beauty'}}</title>
+
+  @vite(['resources/css/app.css'])
+</head>
+<body>
+  @include('components/preloader')
+  @include('partials/header')
+  <main class="main__content_wrapper">
+    @include('components/section/hero')
+    @include('components/section/service')
+    @include('components/section/collection')
+    @include('components/section/produit')
+  </main>
+  @include('partials/footer')
+
+  <!-- All Script JS Plugins here  -->
+  <script src="/js/vendor/popper.js" defer="defer"></script>
+  <script src="/js/vendor/bootstrap.min.js" defer="defer"></script>
+  <script src="/js/plugins/swiper-bundle.min.js"></script>
+  <script src="/js/plugins/glightbox.min.js"></script>
+
+ <!-- Customscript js -->
+ <script src="/js/script.js"></script>
+</body>
+</html>
